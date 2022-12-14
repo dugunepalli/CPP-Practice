@@ -1,14 +1,57 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> //Single Header for All header File
+
+#include<iostream>      //Standard Header File
+#include<fstream>       //File handling Header File
+//By File Handling We can read and write Data
 using namespace std;
+
 
 void Admin_Login()
 {
-    cout<<"Admin Login"<<endl;
+    cout<<"\t\t\t\t\t\tADMIN LOGIN PAGE"<<endl<<endl<<endl;
+    
+    string PassWord;
+    string User_Name;
+    
+    cout<<"Enter User Name: ";
+    cin>>User_Name;
+    
+    cout<<"Enter Passcode: ";
+    cin>>PassWord;
 }
+
+//Admin Registation
 void Admin_Registation()
 {
-    cout<<"Admin Registation"<<endl;
+    cout<<"\t\t\t\t\t\tADMIN REGISTATION"<<endl<<endl<<endl;
+    //To Enter Full Name
+    string Full_Name;
+    cout<<"Please Enter Name as EX: your name is "Dugunepalli Sunil Kumar" -Enter as "Dugunepalli_Sunil_Kumar"<<endl;
+    cout<<"Enter Full Name: ";
+    //To Read Full Name
+    getline(cin,Full_Name);
+    //Enter Employee ID
+    int Employee_Id;
+    cout<<"Enter Employee ID: ";
+    cin>>Employee_Id;
+    //For EMployee Official Mail ID
+    string Employee_Mail;
+    Employee_Mail=Full_Name+"@Sunil.com";
+    
+    ofstream File("Admin_Registation.txt");
+    File<<Full_Name<<"\t"<<Employee_Id<<"\t"<<Employee_Mail;
+    
+    cout<<"\t\tREGISTATION SUCCESSFUL"<<endl<<endl;
+    
+    ofstream Login("Admin_Login.txt");
+    Login<<Employee_Mail<<"\t"<<Employee_Id;
+    
+    cout<<"Your Login Credentials "<<endl<<endl;
+    cout<<"User Name: "<<Employee_Mail<<endl;
+    cout<<"Password: "<<Employee_Id<<endl;
 }
+
+
 void Admin_Forgot()
 {
     cout<<"Admin Forgot"<<endl;
