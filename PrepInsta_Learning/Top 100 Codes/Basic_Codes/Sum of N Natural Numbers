@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int Number, Sum=0;
+    cout<<"Enter a Number: ";
+    cin>>Number;
+    
+    for(int Loop=1;Loop<=Number;Loop++)
+    {
+        Sum=Sum+Loop;
+    }
+    cout<<"Sum of first N numbers are: "<<Sum<<endl;
+}
