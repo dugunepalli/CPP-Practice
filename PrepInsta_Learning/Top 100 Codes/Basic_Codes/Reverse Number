@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int Number,Reverse_Number=0,Reminder;
+    cout<<"Enter Number: ";
+    cin>>Number;
+    
+    while(Number!=0)
+    {
+        Reminder=Number%10;
+        Reverse_Number=(Reverse_Number*10)+Reminder;
+        Number=Number/10;
+    }
+    cout<<"Reverse_Number is: "<<Reverse_Number<<endl;
+}
