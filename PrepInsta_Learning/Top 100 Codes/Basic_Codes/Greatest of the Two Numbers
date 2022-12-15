@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int Number1,Number2;
+    cout<<"Enter a Number 1: ";
+    cin>>Number1;
+    
+    cout<<"Enter a Number 2: ";
+    cin>>Number2;
+    
+    if(Number1>Number2)
+    {
+        cout<<"Number "<<Number1<<" is greatest"<<endl;
+    }
+    else
+    {
+        cout<<"Number "<<Number2<<" is greatest"<<endl;
+    }
+}
