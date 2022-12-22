@@ -1,0 +1,97 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void Create_Account()
+{
+    long int Account_No=9182364523;
+    char Full_Name[100];
+    char Gender[10];
+    long int Aadhar_No;
+    string Pan_No;
+    
+    string User_Name;
+    string Password;
+    
+    ofstream File;
+    File.open("Database.txt", ios::app);
+    
+    Account_No++;
+    
+    cout<<"Enter Full Name: ";
+    cin.getline(Full_Name,100);
+    
+    cout<<"Gender(Male/Female/Others): ";
+    cin.getline(Gender,10);
+    
+    cout<<"Enter Aadhaar No: ";
+    cin>>Aadhar_No;
+    
+    cout<<"Enter Pan Card No: ";
+    cin>>Pan_No;
+    
+    File<<"DETAILS: \n"<<"\n\tAccount No: "<<Account_No<<"\n\tName: "<<Full_Name<<"\n\tGender: "<<
+    Gender<<"\n\tAadhar_No: "<<Aadhar_No<<"\n\tPan Card: "<<Pan_No<<endl<<endl<<endl<<endl;
+    File.close();
+}
+void Account(){}
+void Transactions(){}
+void Available_Balence(){}
+void Logout(){exit(0);}
+void Debit(){}
+void Credit(){}
+
+void Bank()
+{
+    int Option;
+    while(1)
+    {
+        cout<<"1.Account Details\n2.Credit\n3.Debit\n4.Available Balence\n5.Transaction\n6.Logout"<<endl;
+        cout<<"Enter Your Choice:  ";
+        cin>>Option;
+        //Switc Case to Show Different Options
+        switch(Option)
+        {
+            case 1:
+            {
+                Account();//Calling Account Function
+                break;
+            }//End Of case 1
+            case 2:
+            {
+                Credit();//Calling Credit Function
+                break;
+            }//End Of Case 2
+            case 3:
+            {
+                Debit();//Calling Debit function
+                break;
+            }//End Of Case 3
+            case 4:
+            {
+                Available_Balence();//Calling Available Balence Function
+                break;
+            }//End Of Case 4
+            case 5:
+            {
+                Transactions();//Calling Transactions Function
+                break;
+            }//End Of Case 5
+            case 6:
+            {
+                Logout();//Calling Logout Function
+                break;
+            }//End Of Case 6
+            default://default case 
+            {
+                cout<<"Choose Valid Choice ! Try Again "<<endl;
+            }//End Of default
+        }//End Of switch case
+    }//End Of while Loop
+}//End Of Bank
+
+int main()
+{
+    //Bank();
+    Create_Account();
+    return 0;
+}
