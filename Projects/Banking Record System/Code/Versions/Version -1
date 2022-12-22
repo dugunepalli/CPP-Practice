@@ -1,0 +1,63 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void Account(){}
+void Transactions(){}
+void Available_Balence(){}
+void Logout(){exit(0);}
+void Debit(){}
+void Credit(){}
+
+void Bank()
+{
+    int Option;
+    while(1){
+    cout<<"1.Account Details\n2.Credit\n3.Debit\n4.Available Balence\n5.Transaction\n6.Logout"<<endl;
+    cout<<"Enter Your Choice:  ";
+    cin>>Option;
+    
+    switch(Option)
+    {
+        case 1:
+        {
+            Account();
+            break;
+        }
+        case 2:
+        {
+            Credit();
+            break;
+        }
+        case 3:
+        {
+            Debit();
+            break;
+        }
+        case 4:
+        {
+            Available_Balence();
+            break;
+        }
+        case 5:
+        {
+            Transactions();
+            break;
+        }
+        case 6:
+        {
+            Logout();
+            break;
+        }
+        default:
+        {
+            cout<<"Choose Valid Choice ! Try Again "<<endl;
+        }
+    }
+    }
+}
+
+int main()
+{
+    Bank();
+    return 0;
+}
