@@ -25,6 +25,7 @@ int main()
             break;
             
         case 3:
+            cout<<"Elements are: ";
             for(int Loop:Name)
                 cout<<Loop<<" ";
             cout<<endl;
