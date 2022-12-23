@@ -5,7 +5,7 @@ int main()
     std::vector<int> Name;
     while(1){
     cout<<endl;
-    cout<<"1.Push\n2.Pop\n3.Display"<<endl;
+    cout<<"1.Push\n2.Pop\n3.Display All\n4.Display Specific index Value"<<endl;
     int Choice;
     cout<<"Enter Your Choice: ";
     cin>>Choice;
@@ -26,8 +26,15 @@ int main()
             
         case 3:
             for(int Loop:Name)
-                cout<<Loop;
-                break;
+                cout<<Loop<<" ";
+            cout<<endl;
+            break;
+        case 4:
+            int Index;
+            cout<<"Enter Index Number to display: ";
+            cin>>Index;
+            cout<<Name[Index]<<endl;
+            break;
         default:
             cout<<"Enter Valid Choice ! Try Again"<<endl;
     }
