@@ -1,0 +1,86 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> Name;
+    while(1)
+    {
+        cout<<endl;
+        cout<<"1.Push\n2.Pop\n3.Display All\n4.Display Specific index Value\n5.Change Index Value"<<endl;
+        cout<<"6.Print First Element\n7.Print Last Element\n8.Size/no of elements(Vector)";
+        cout<<"\n9.Capacity Of Vector\n10.Reserve/Allocate the Specific Size\n11.Exit"<<endl;
+        int Choice;
+        cout<<"Enter Your Choice: ";
+        cin>>Choice;
+        system("clear");
+        switch(Choice)
+        {
+            case 1:
+                int Number1;
+                
+                cout<<"Enter a Number To Push: ";
+                cin>>Number1;
+                system("clear");
+                Name.push_back(Number1);
+                cout<<"Number Added Last Successful: "<<Number1<<endl;
+                break;
+            case 2:
+                Name.pop_back();
+                cout<<"Last Number Deleted Successful: "<<Name.back()<<endl;
+                break;
+                
+            case 3:
+                cout<<"Elements are: ";
+                for(int Loop:Name)
+                    cout<<Loop<<" ";
+                cout<<endl;
+                break;
+            case 4:
+                int Index;
+                cout<<"Enter Index Number to display: "<<endl;
+                cin>>Index;
+                system("clear");
+                cout<<"The"<<Index<<"Number is: "<<Name[Index]<<endl;
+                break;
+            case 5:
+                int index;
+                int Value;
+                
+                cout<<"Select the index number: ";
+                cin>>index;
+                
+                cout<<"Enter Value to exchange: ";
+                cin>>Value;
+                
+                Name[index]=Value;
+                system("clear");
+                cout<<"Value Exchanged Successful"<<endl;
+                break;
+            case 6:
+                cout<<"The First Element is: "<<Name.front()<<endl;
+                break;
+            case 7:
+                cout<<"The Last Element is: "<<Name.back()<<endl;
+                break;
+            case 8:
+                cout<<"The Size/no of elements are: "<<Name.size();
+                break;
+            case 9:
+                cout<<"The Capacity of Vector is: "<<Name.capacity();
+                break;
+            case 10:
+                int Variable;
+                cout<<"Enter The Size Of Vector: ";
+                cin>>Variable;
+                system("clear");
+                Name.reserve(Variable);
+                cout<<"Capacity Of the Verctor has Assigned to "<<Variable<<endl;
+                break;
+            case 11:
+                exit(0);
+                break;
+            default:
+                cout<<"Enter Valid Choice ! Try Again"<<endl;
+        }
+    }
+}
