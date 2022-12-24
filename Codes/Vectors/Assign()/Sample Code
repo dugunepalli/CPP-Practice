@@ -1,0 +1,15 @@
+//Assign Function is used to Read the same values into n number of times
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+    vector<int> Values;
+    Values.assign(9,1);
+    cout<<"The elements are:  ";
+    for(int Loop:Values)
+    {
+        cout<<Loop;
+    }
+}
