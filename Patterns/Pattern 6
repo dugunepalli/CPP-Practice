@@ -1,0 +1,32 @@
+/*
+ *To Design a Patter
+        ex:
+            55555
+            44444
+            33333
+            22222
+            11111
+            
+    here; 
+        5 is Number Given By the User
+ */
+
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int Number;
+    cout<<"Enter a Number: ";
+    cin>>Number;
+    
+    for(int Loop=Number;Loop>0;Loop--)
+    {
+        for(int Inner=0;Inner<Number;Inner++)
+        {
+            cout<<Loop;
+        }
+        cout<<endl;
+    }
+}
