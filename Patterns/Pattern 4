@@ -1,0 +1,30 @@
+/*
+ *To Design a Patter
+        ex:
+            01234
+            01234
+            01234
+            01234
+            01234
+            
+ */
+
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int Number;
+    cout<<"Enter a Number: ";
+    cin>>Number;
+    
+    for(int Loop=0;Loop<Number;Loop++)
+    {
+        for(int Inner=0;Inner<Number;Inner++)
+        {
+            cout<<Inner;
+        }
+        cout<<endl;
+    }
+}
