@@ -1,4 +1,7 @@
 /*Example:
+Problem: 
+A box of candy costs price dollars. You have balance dollars. compute the number of boxes of candy you can buy and return how many dollars you need to buy one more box.
+
 			Price=4
 			Balance=9
 			Output: 3
