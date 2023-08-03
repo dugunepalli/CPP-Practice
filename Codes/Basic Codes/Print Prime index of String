@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int count=0;
+    string str;
+    cout<<"Enter the string: ";
+    cin>>str;
+    
+    int n=str.length();
+    for(int i=1;i<n;i++)
+    {
+        for(int j=2; j<i; j++)
+        {
+           if(i%j==0)
+           {
+               count++;
+               break;
+           }
+        }
+        if(count==0 && i!=1)
+            //printf("%d\n", i);
+            cout<<str[i]<<" ";
+        count = 0;
+    }
+}
