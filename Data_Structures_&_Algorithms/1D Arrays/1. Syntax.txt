@@ -3,8 +3,8 @@ One-dimensional arrays, also called as single arrays
 Syantax is "Data_Type Array_Name[Array_Elements]"
 
 Examples:
-a. int Sunil[1,2,3,4,5]
-b. char Sunil['a','b','c','d]
+a. int Sunil[5]={1,2,3,4,5};
+b. char Sunil[5]={'a','b','c','d};
 
 Indexing: as refer using Example a
     1. Array indexing Starts with 0
