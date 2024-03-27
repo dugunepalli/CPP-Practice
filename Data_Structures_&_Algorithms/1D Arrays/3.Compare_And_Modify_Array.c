@@ -10,6 +10,7 @@ int main()
   {
     if(Sunil[i]==Value)
     {
+        Sunil[i]=6;
         printf("Sunil[%d] is on Index and Value is %d\n", i, Sunil[i]);
     }
   }
