@@ -11,6 +11,7 @@ int main()
   {
     if(Sunil[i]==Value)
     {
+        Sunil[i]=6;
         cout<<"Sunil["<<i<<"] is on Index and Value is "<<Sunil[i];
     }
   }
